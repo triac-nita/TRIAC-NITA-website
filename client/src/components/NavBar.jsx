@@ -40,7 +40,7 @@ function NavBar() {
   return (
     <div >
       
-      <header className="bg-black text-gray-200">
+      <header className="bg-gray-900 text-gray-50 border-b-1 shadow-slate-300 shadow-lg">
   <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
     <div className="flex h-16 items-center justify-between">
 
@@ -66,7 +66,7 @@ function NavBar() {
               return  <li key={item.id}>
                   
                     <a 
-                    className='text-gray-400 text-xl transition hover:text-gray-500/75'
+                    className='text-gray-100 text-xl transition hover:text-gray-400/75'
                     href= {item.url}>
                       {item.name}
                     </a>
