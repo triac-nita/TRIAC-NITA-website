@@ -1,40 +1,42 @@
 import React from 'react'
 import logo from './../assets/logo.png'
+import navbaritems from '../lib/navbar'
+
 function NavBar() {
 
 
-  const items= [
-    {
-      id:1,
-    name: "Home",
-    url: "/"
-    },
-    {
-      id: 2,
-      name: "Events",
-      url: "/events"
-    },
-    {
-      id: 3,
-      name: "Projects",
-      url: "/projects"
-    },
-    {
-      id:4,
-      name: "Blogs",
-      url: "/blogs"
-    },
-    {
-      id: 5,
-      name: "About Us",
-      url: "/about-us"
-    },
-    {
-      id:6,
-      name: "Contact Us",
-      url: "/contact-us"
-    }
-  ]
+  // const items= [
+  //   {
+  //     id:1,
+  //   name: "Home",
+  //   url: "/"
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "Events",
+  //     url: "/events"
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "Projects",
+  //     url: "/projects"
+  //   },
+  //   {
+  //     id:4,
+  //     name: "Blogs",
+  //     url: "/blogs"
+  //   },
+  //   {
+  //     id: 5,
+  //     name: "About Us",
+  //     url: "/about-us"
+  //   },
+  //   {
+  //     id:6,
+  //     name: "Contact Us",
+  //     url: "/contact-us"
+  //   }
+  // ]
 
 
   return (
@@ -62,7 +64,7 @@ function NavBar() {
 
 
           {
-            items.map((item) => {
+            navbaritems.map((item) => {
               return  <li key={item.id}>
                   
                     <a 
