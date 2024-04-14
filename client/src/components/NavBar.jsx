@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './../assets/logo_without-bg.png'
+import logo from './../assets/TRIAC LOGO.svg'
 
 import navbaritems from '../lib/navbar'
 
@@ -20,8 +20,8 @@ const NavBar = () =>{
                 <span className="sr-only">Home</span>
                 <img
                   className=' border-none rounded '
-                  height={100}
-                  width={100}
+                  height={150}
+                  width={150}
                   src={logo} alt="Logo" />
               </a>
             </div>
