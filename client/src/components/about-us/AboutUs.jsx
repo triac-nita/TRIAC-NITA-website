@@ -1,28 +1,31 @@
 import React from 'react'
-import logo from '../../assets/FINAL LOGO.png'
+import logo from '../../assets/logo.png'
 import Constant from '../../data/Constant'
 
 
-function AboutUs() {
+function AboutUs({id}) {
+
+  
   return (
-    <div className='bg-gray-950 pt-5 md:p-14 text-white flex gap-5 flex-col '>
-      <h2 className=' text-5xl text-center p-1 m-3 '>Who We Are</h2>
-      <div className='flex flex-col md:flex-row  gap-8  items-center w-full'>
+    <div id= {id} className='bg-gray-950  pt-10 md:p-14 text-white flex gap-5 flex-col '>
+      <h2 className=' text-5xl text-center p-1 mt-10 '>Who We Are ?</h2>
+      <div className='flex flex-col pb-20 md:flex-row  gap-8 justify-between  items-center w-full'>
       
             {/* logo */}
-            <div className="flex pt-4 pb-4  md:flex md:items-center md:gap-1">
+            <div className="flex  pt-20 pb-20   md:flex md:items-center md:gap-1">
               
                 <span className="sr-only">Home</span>
                 <img
-                  className=' border-none rounded bg-gray-950 transition duration-300 hover:scale-110 '
-                  height={400}
-                  width={400}
+                  className=' border-none rounded bg-gray-950 transition duration-500 hover:scale-110 '
+                  height={300}
+                  width={300}
                   src={logo} alt="Logo" />
               
             </div>
 
-          <div className='text-xl w-full md:w-2/3 p-5 pr-3  text-gray-300'>
-            {Constant.aboutus}
+          <div className=' text-lg flex  flex-col items-center gap-5 md:text-xl w-full md:w-2/3 pl-10 pr-3  text-gray-100 opacity-60'>
+            <div>{Constant.aboutusPara1}</div>
+            <div>{Constant.aboutusPara2}</div>
           </div>
           
       
