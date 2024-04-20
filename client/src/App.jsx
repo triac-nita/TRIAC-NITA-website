@@ -1,18 +1,23 @@
 import { useState } from 'react'
-import NavBar from './components/NavBar'
 import Hero from './components/hero/Hero'
 import Footer from './components/footer/Footer'
 import AboutUs from './components/about-us/AboutUs'
+import NavBar from './components/navbar/NavBar'
+import ContactUs from './components/contact-us/ContactUs'
+import Teams from './components/teams/Teams'
 
 
 function App() {
  
   return (
   <div className=' text-2xl w-full h-screen bg-black text-white'>
-    <NavBar />
-    <Hero/>
-    <AboutUs/>
-    <Footer/>
+
+    <NavBar id= {"top"} />
+    <Hero id= {"hero"}/>
+    <AboutUs id= {"about-us"}/>
+    <Teams id={"teams"} />
+    <ContactUs id= {"contact-us"} />
+    <Footer id= {"footer"}/>
   </div>
   )
 }

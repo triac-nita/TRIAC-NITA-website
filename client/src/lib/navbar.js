@@ -3,32 +3,51 @@ const navbaritems = [
     {
         id: 1,
         name: "Home",
-        url: "/"
+        url: "/",
+        scrollId: null
       },
       {
         id: 2,
         name: "Events",
-        url: "/events"
+        url: "/events",
+        scrollId: null
       },
       {
         id: 3,
         name: "Projects",
-        url: "/projects"
+        url: "/projects",
+        scrollId: null
       },
       {
         id: 4,
         name: "Blogs",
-        url: "/blogs"
+        url: "/blogs",
+        scrollId: null
       },
+      
       {
         id: 5,
-        name: "About Us",
-        url: "/about-us"
+        name: "Teams",
+        url: "/teams",
+        scrollId: "teams"
       },
       {
         id: 6,
+        name: "Gallery",
+        url: "#",
+        scrollId: null
+      },
+      {
+        id: 7,
+        name: "About Us",
+        url: "#about-us",
+        scrollId: "about-us"
+      },
+      {
+        id: 8,
         name: "Contact Us",
-        url: "/contact-us"
+        url: "#contact-us",
+        scrollId: "contact-us"
       }
 ]
 
