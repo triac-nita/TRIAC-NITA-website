@@ -9,7 +9,7 @@ function AboutUs({id}) {
   return (
     <div id= {id} className='bg-gray-950  pt-10 md:p-14 text-white flex gap-5 flex-col '>
       <h2 className=' text-5xl text-center p-1 mt-10 '>Who We Are ?</h2>
-      <div className='flex flex-col pb-20 md:flex-row  gap-8 justify-between  items-center w-full'>
+      <div className='flex flex-col flex-wrap items-center justify-center pb-20 md:flex-row  gap-8  w-full'>
       
             {/* logo */}
             <div className="flex  pt-20 pb-20   md:flex md:items-center md:gap-1">

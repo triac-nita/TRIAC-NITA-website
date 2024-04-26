@@ -21,7 +21,7 @@ const NavBar = ({id}) =>{
 
       <header className="bg-gray-900 text-gray-100">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-          <div className="flex items-start p-1 justify-between">
+          <div className="flex items-start gap-10 p-1 justify-between">
 
             {/* logo */}
             <div className="flex md:flex md:items-center md:gap-12">
@@ -38,7 +38,7 @@ const NavBar = ({id}) =>{
             <div className="flex  relative top-3 md:items-center md:gap-12">
               {/* Desktop view---- */}
               <nav aria-label="Global" className="hidden md:block">
-                <ul className="flex items-center gap-6 text-sm">
+                <ul className="flex flex-wrap items-center gap-6 text-sm">
 
 
                   {
@@ -51,8 +51,8 @@ const NavBar = ({id}) =>{
                         href={url}                       
                         to={scrollId ? scrollId : url}
                         smooth
-                        duration={1000}
-                          className='text-gray-400 text-xl transition hover:text-gray-500/75'
+                        duration={700}
+                          className='text-gray-400  text-xl transition hover:text-gray-500/75'
                         >
                           {name}
                         </Link>

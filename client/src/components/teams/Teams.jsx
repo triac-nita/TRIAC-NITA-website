@@ -7,7 +7,7 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function Teams() {
+function Teams({id}) {
 
   var settings = {
     dots: true,
@@ -47,7 +47,7 @@ function Teams() {
   };
 
   return (
-    <div className='w-full min-h-screen bg-gray-900 p-5 pt-10 md:pt-20'>
+    <div id= {id} className='w-full min-h-screen bg-gray-900 p-5 pt-10 md:pt-20'>
       <h2 className=' font-semibold text-4xl md:text-5xl mb-5 text-center'>
         Meet Our Team !
       </h2>

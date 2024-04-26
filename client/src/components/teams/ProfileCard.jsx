@@ -6,7 +6,7 @@ const Card = ({item}) => {
   const [isHovered, setIsHovered] = React.useState(false);
 
   return (
-    <div className="relative w-64 h-80 bg-gray-200 rounded-lg overflow-hidden shadow-md">
+    <div className="relative cursor-pointer w-64 h-80 bg-gray-200 rounded-lg overflow-hidden shadow-md">
       <img
         src={item.profile_pic}
         alt="placeholder"
@@ -14,8 +14,8 @@ const Card = ({item}) => {
       />
       <div
         className={`${
-          isHovered ? "opacity-100 bg-gray-900 bg-opacity-75  text-white" : "opacity-0"
-        } absolute inset-0 flex justify-center items-center transition-opacity duration-300`}
+          isHovered ? "opacity-100 bg-gray-900 bg-opacity-75  text-white  translate-y-0 " : "opacity-0   translate-y-[100%]"
+        } absolute inset-0 flex justify-center items-center  transition-all duration-500 ease-in-out`}
       >
         <div className=" text-white rounded">
           <h3 className="text-lg font-semibold">{item.name}</h3>
