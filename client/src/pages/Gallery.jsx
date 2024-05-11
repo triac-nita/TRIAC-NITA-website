@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Gallery() {
+const Gallery = () => {
   return (
     <div>
-      Gallery Page--
+      Gallery Page is Here
     </div>
   )
 }

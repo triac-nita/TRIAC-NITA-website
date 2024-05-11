@@ -3,7 +3,8 @@ import logo from '../../assets/logo.png'
 import navbaritems from '../../lib/navbar'
 import Sidebar from './Sidebar'
 import { Camera, Menu, X } from 'lucide-react';
-import {Link} from 'react-scroll'
+import { Link } from 'react-scroll';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = ({id}) =>{
 
@@ -19,7 +20,7 @@ const NavBar = ({id}) =>{
   return (
     <div id= {id} >
 
-      <header className="bg-gray-900 text-gray-100">
+      <header className="shadow-md shadow-slate-900 text-gray-100 bg-slate-950">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-start gap-10 p-1 justify-between">
 
@@ -45,9 +46,24 @@ const NavBar = ({id}) =>{
                     navbaritems.map(({id, name, url, scrollId}) => {
                       return <li key={id}>
 
-                        <Link
+                          {(url === '#teams' ||
+                           url === '#contact-us' || url === '#about-us') ? <Link
+                           href={url}                       
+                           to={scrollId ? scrollId : url}
+                           smooth
+                           duration={700}
+                             className='text-gray-400  text-xl transition hover:text-gray-500/75'
+                           >
+                             {name}
+                           </Link> : <NavLink
+                        to={url}
+                        className={`text-gray-400  text-xl transition hover:text-gray-500/75`}
 
+                        >
+                             {name}
+                        </NavLink> }
 
+                        {/* <Link
                         href={url}                       
                         to={scrollId ? scrollId : url}
                         smooth
@@ -55,7 +71,15 @@ const NavBar = ({id}) =>{
                           className='text-gray-400  text-xl transition hover:text-gray-500/75'
                         >
                           {name}
-                        </Link>
+                        </Link> */}
+
+                        {/* <NavLink
+                        to={url}
+                        className={`text-gray-400  text-xl transition hover:text-gray-500/75`}
+
+                        >
+                             {name}
+                        </NavLink> */}
 
                       </li>
                     })

@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Gallery() {
+const Events = () => {
   return (
     <div>
-      Gallery Page--
+      Events page
     </div>
   )
 }
 
-export default Gallery
+export default Events
