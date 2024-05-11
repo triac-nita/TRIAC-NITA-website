@@ -5,19 +5,28 @@ import AboutUs from './components/about-us/AboutUs'
 import NavBar from './components/navbar/NavBar'
 import ContactUs from './components/contact-us/ContactUs'
 import Teams from './components/teams/Teams'
+import { Outlet } from 'react-router'
 
 
 function App() {
  
   return (
-  <div className=' text-2xl w-full h-screen bg-black text-white'>
+  <div className=' text-2xl w-full  h-screen text-white'>
 
-    <NavBar id= {"top"} />
-    <Hero id= {"hero"}/>
-    <AboutUs id= {"about-us"}/>
-    <Teams id={"teams"} />
-    <ContactUs id= {"contact-us"} />
-    <Footer id= {"footer"}/>
+      <div className='w-full block '>
+      <NavBar id= {"top"} />
+
+      <main className='min-h-screen'>
+        <Outlet/>
+      </main>
+
+      <Footer id= {"footer"}/>
+     
+      </div>
+    
+   
+   
+   
   </div>
   )
 }

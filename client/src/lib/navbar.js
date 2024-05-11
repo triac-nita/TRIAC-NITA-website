@@ -33,14 +33,14 @@ const navbaritems = [
       {
         id: 5,
         name: "Teams",
-        url: "/teams",
+        url: "#teams",
         scrollId: "teams",
         icon: UsersRound
       },
       {
         id: 6,
         name: "Gallery",
-        url: "#",
+        url: "/gallery",
         scrollId: null,
         icon: Images
       },
