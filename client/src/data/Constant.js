@@ -14,3 +14,46 @@ export default {
         be part of our innovative community. Embrace the spirit of exploration
          and join TRIAC today!`
 }
+
+export const clubActivities = [
+    {
+        title: "Robotics",
+        description: "lorem text is great way to express gratitude toward developers :)"
+    },
+    {
+        title: "Artificial Intelligence",
+        description: "Exploring the world of AI, machine learning, and neural networks."
+    },
+    {
+        title: "Web Development",
+        description: "Learning to build and design responsive websites using modern technologies."
+    },
+    {
+        title: "App Development",
+        description: "Creating mobile applications for Android and iOS platforms."
+    },
+    {
+        title: "Game Development",
+        description: "Designing and developing interactive games using various game engines."
+    },
+    {
+        title: "Cyber Security",
+        description: "Understanding the principles of securing systems and networks from cyber threats."
+    },
+    {
+        title: "Data Science",
+        description: "Analyzing and interpreting complex data to help make better decisions."
+    },
+    {
+        title: "Electronics",
+        description: "Hands-on projects involving circuits, microcontrollers, and other electronic components."
+    },
+    {
+        title: "Cloud Computing",
+        description: "Learning about cloud services, architecture, and deployment models."
+    },
+    {
+        title: "Blockchain",
+        description: "Exploring the decentralized world of blockchain technology and cryptocurrencies."
+    }
+];
