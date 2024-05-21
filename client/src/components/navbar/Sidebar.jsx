@@ -8,7 +8,8 @@ function Sidebar({ open, setOpen }) {
 
 
   return (
-    <div className={` md:hidden opacity-100  fixed top-0 left-0 z-[2000] bg-gray-950  min-h-screen ${open ? " translate-x-0 " : " translate-x-[-100%]"} duration-700
+    <div className={` md:hidden opacity-100  fixed top-0 left-0 z-[10000] bg-gray-950 cursor-pointer
+     min-h-screen ${open ? " translate-x-0 " : " translate-x-[-100%]"} duration-700
     text-gray-300 px-4 overflow-hidden pt-16  shadow-xl transition w-4/5`}>
 
       <div className=' pb-10 border-b-2 border-b-slate-500 flex justify-between items-center'>
@@ -18,7 +19,7 @@ function Sidebar({ open, setOpen }) {
         </h2>
 
         <ArrowLeftToLine size={40}
-          className={`cursor-pointer transition-transform bg-gray-900 p-1 rounded-md
+          className={`cursor-pointer transition-transform z-[10000] bg-gray-900 p-1 rounded-md
          duration-500 ease-in-out ${open ? "" : "rotate-180"}`}
           onClick={() => setOpen(prev => !prev)} />
 

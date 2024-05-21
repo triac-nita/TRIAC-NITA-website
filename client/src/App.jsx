@@ -12,7 +12,7 @@ function App() {
   return (
   <div className=' text-2xl w-full  h-screen text-white'>
 
-      <div className='w-full block relative '>
+      <div className='w-full'>
       <NavBar id= {"top"} />
 
       <main className='min-h-screen'>
@@ -23,8 +23,6 @@ function App() {
      
       </div>
     
-   
-   
    
   </div>
   )
