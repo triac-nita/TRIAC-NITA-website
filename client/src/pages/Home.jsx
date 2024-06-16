@@ -2,9 +2,9 @@ import React from 'react'
 import Hero from '../components/hero/Hero'
 import AboutUs from '../components/about-us/AboutUs'
 import Teams from '../components/teams/Teams'
-import ContactUs from '../components/contact-us/ContactUs'
-import Footer from '../components/footer/Footer'
+
 import ClubActivities from '../components/club-activity/ClubActivities'
+import Contact from '../components/contact-us/Contact'
 
 const Home = () => {
     return (
@@ -15,7 +15,7 @@ const Home = () => {
                 <AboutUs id={"about-us"} />
                 <ClubActivities id= {"#"} />
                 <Teams id={"teams"} />
-                <ContactUs id={"contact-us"} />
+                <Contact id={"contact-us"} />
 
             </div>
         </div>

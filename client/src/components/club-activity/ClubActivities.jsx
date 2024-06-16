@@ -14,7 +14,7 @@ const ClubActivities = ({ id }) => {
                     {
                         clubActivities?.map((activity) => (
 
-                            <div className=' border-2 border-cyan-600 shadow-lg
+                            <div id= {activity.title} className=' border-2 border-cyan-600 shadow-lg
                             shadow-cyan-600 p-4 flex 
                            flex-col items-center justify-center 
                            rounded-[22px] max-w-sm sm:p-10 bg-zinc-900 min-h-64
@@ -26,36 +26,7 @@ const ClubActivities = ({ id }) => {
                         ))
                     }
 
-                    <div className=' border-2 border-cyan-600 shadow-lg
-                     shadow-cyan-600 p-4 flex 
-                    flex-col items-center justify-center 
-                    rounded-[22px] max-w-sm sm:p-10 bg-zinc-900
-                    '>
-
-                        <p className='text-base sm:text-xl mt-4 mb-2 text-neutral-200'>Robotics</p>
-                        <p className='text-sm text-center  text-neutral-400'>Lorem ipsum dolor sit amet consectetur adipisicing
-                             elit. Atque numquam, rerum magni, deleniti, modi 
-                             corrupti enim dolorem esse culpa quae animi expedita 
-                             accusamus sunt amet consequatur? Aspernatur odit nemo
-                              facilis vitae non assumenda vel. Voluptatibus minima
-                         atque ipsa earum quas!</p>
-                    </div>
-
-                    <div className=' border-2 border-cyan-600 shadow-lg
-                     shadow-cyan-600 p-4 flex 
-                    flex-col items-center justify-center 
-                    rounded-[22px] max-w-sm sm:p-10 bg-zinc-900
-                    '>
-
-                        <p className='text-base sm:text-xl mt-4 mb-2 text-neutral-200'>Robotics</p>
-                        <p className='text-sm text-center  text-neutral-400'>Lorem ipsum dolor sit amet consectetur adipisicing
-                             elit. Atque numquam, rerum magni, deleniti, modi 
-                             corrupti enim dolorem esse culpa quae animi expedita 
-                             accusamus sunt amet consequatur? Aspernatur odit nemo
-                              facilis vitae non assumenda vel. Voluptatibus minima
-                         atque ipsa earum quas!</p>
-                    </div>
-            
+                   
                 </div>
             </div>
         </div>

@@ -33,7 +33,7 @@ const navbaritems = [
       {
         id: 5,
         name: "Teams",
-        url: "#teams",
+        url: "/teams",
         scrollId: "teams",
         icon: UsersRound
       },
@@ -57,7 +57,24 @@ const navbaritems = [
         url: "#contact-us",
         scrollId: "contact-us",
         icon: SquareUser
-      }
+      },
+
+      {
+        id: 9,
+        name: "Downloads",
+        url: "/downloads",
+        scrollId: "contact-us",
+        icon: SquareUser
+      },
+
+      {
+        id: 10,
+        name: "Faculty",
+        url: "/faculty",
+        scrollId: "contact-us",
+        icon: SquareUser
+      },
+
 ]
 
 export default navbaritems;

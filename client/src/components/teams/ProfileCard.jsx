@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { GithubIcon, Instagram, InstagramIcon, Linkedin, Twitter } from "lucide-react";
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
 // {
@@ -36,9 +37,11 @@ const Card = ({item}) => {
           </div>
         
           <div className="flex flex-row gap-4 justify-center items-center">
+              <NavLink to={item.linkedinProfileUrlPleaseKeepYourActive}>
               <span>
                 <Linkedin size={30} className=" bg-blue-700 rounded text-white p-1" />
               </span>
+              </NavLink>
               <span> 
              
                 <InstagramIcon size={30} className=" bg-pink-700 rounded text-white p-1" /> </span>

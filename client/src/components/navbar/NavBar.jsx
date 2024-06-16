@@ -63,7 +63,7 @@ const NavBar = ({ id }) => {
           <div className="md:flex bg-gradient-to-r from-slate-800
            to-[#191919]  bg-[#191919] border-2 border-cyan-600 shadow-lg
            shadow-cyan-600 
-            w-9/12 rounded-full
+            w-11/12 rounded-full
              md:items-center md:gap-12 justify-center flex-wrap hidden">
               {/* Desktop view---- */}
               <nav aria-label="Global" className="hidden md:block">
