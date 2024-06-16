@@ -12,7 +12,11 @@ export default {
       and innovation, where curiosity meets creativity. Whether you're
        an aspiring researcher or a tech enthusiast, TRIAC invites you to
         be part of our innovative community. Embrace the spirit of exploration
-         and join TRIAC today!`
+         and join TRIAC today!`,
+    ContactUsPara: `Like what you see in my portfolio? Let's chat about potential
+                                 freelancing gigs, projects, or anything else where I can lend
+                                  a hand. Drop me a line via the links provided or fill out the
+                                   form below. Excited to connect!`
 }
 
 export const clubActivities = [
@@ -57,3 +61,4 @@ export const clubActivities = [
         description: "Exploring the decentralized world of blockchain technology and cryptocurrencies."
     }
 ];
+
