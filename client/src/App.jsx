@@ -1,10 +1,5 @@
-import { useState } from 'react'
-import Hero from './components/hero/Hero'
 import Footer from './components/footer/Footer'
-import AboutUs from './components/about-us/AboutUs'
 import NavBar from './components/navbar/NavBar'
-import ContactUs from './components/contact-us/ContactUs'
-import Teams from './components/teams/Teams'
 import { Outlet } from 'react-router'
 
 function App() {

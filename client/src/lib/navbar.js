@@ -60,7 +60,7 @@ const navbaritems = [
       },
 
       {
-        id: 8,
+        id: 9,
         name: "Downloads",
         url: "/downloads",
         scrollId: "contact-us",
@@ -68,7 +68,7 @@ const navbaritems = [
       },
 
       {
-        id: 8,
+        id: 10,
         name: "Faculty",
         url: "/faculty",
         scrollId: "contact-us",

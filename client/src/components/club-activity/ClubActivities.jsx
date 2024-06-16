@@ -14,7 +14,7 @@ const ClubActivities = ({ id }) => {
                     {
                         clubActivities?.map((activity) => (
 
-                            <div className=' border-2 border-cyan-600 shadow-lg
+                            <div id= {activity.title} className=' border-2 border-cyan-600 shadow-lg
                             shadow-cyan-600 p-4 flex 
                            flex-col items-center justify-center 
                            rounded-[22px] max-w-sm sm:p-10 bg-zinc-900 min-h-64
